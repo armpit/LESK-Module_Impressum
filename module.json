@@ -1,0 +1,9 @@
+{
+	"name": "Impressum",
+	"slug": "impressum",
+	"namespace": "Impressum",
+	"version": "1.0",
+	"author": "armpit",
+	"license": "ISC",
+	"description": "Simple impressum page with boilerplate text."
+}

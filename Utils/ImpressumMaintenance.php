@@ -44,7 +44,7 @@ class ImpressumMaintenance implements ModuleMaintenanceInterface
                 $permOpenToAll );
 
             // Create menu system for the module
-            self::createMenu( 'impressum.home', 'Impressum', 0, 'fa fa-file', $menuHome, false, $routeHome );
+            self::createMenu( 'impressum.home', 'Impressum', 999, 'fa fa-file', $menuHome, false, $routeHome );
         }); // End of DB::transaction(....)
     }
 

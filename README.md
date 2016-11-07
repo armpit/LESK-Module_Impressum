@@ -3,7 +3,7 @@
 To deploy simply clone the repository from the ```Modules``` directory of the base [LESK](https://github.com/sroutier/laravel-enterprise-starter-kit) install, as shown below:
 ```
 $ cd app/Modules/
-$ git clone https://github.com/armpit/LESK_Module-impressum.git Impressum
+$ git clone https://github.com/armpit/LESK-Module_Impressum.git Impressum
 ```
 
 Then make sure to optimize the master module definition, from the base directory, with:

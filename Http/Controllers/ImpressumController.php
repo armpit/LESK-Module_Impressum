@@ -23,6 +23,7 @@ namespace App\Modules\Impressum\Http\Controllers;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Setting;
 use App\Repositories\AuditRepository as Audit;
 use Auth;
 
@@ -34,8 +35,10 @@ class ImpressumController extends Controller
 
         $page_title = trans('impressum::general.page.index.title');
         $page_description = trans('impressum::general.page.index.description');
+        //$site_url = (new Setting())->get('app.url');
+        $site_url = str_replace('http://', '', (new Setting())->get('app.url'));
 
-        return view('impressum::index', compact('page_title', 'page_description'));
+        return view('impressum::index', compact('page_title', 'page_description', 'site_url'));
     }
 
 }
